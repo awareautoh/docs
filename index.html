@@ -1,4 +1,3 @@
-
 Git  summary
 
 // first reposit
@@ -21,4 +20,21 @@ git push -u origin master
 version 19 August 201
 // best free ocr for English 
 www.convert.co/ocr
-7
+After reading the manual above. Take the following steps maybe help you:
+
+// this is how to set vim color 
+
+find runtimepath
+
+:set runtimepath?
+It will print out run-time paths:
+runtimepath=~/.vim,/usr/share/vim/vimfiles,/usr/share/vim/vim71,/usr/share/vim/vimfiles/after,~/.vim/after
+create directory called colors under one of them if not exist(for example: ~/.vim)
+$ ls ~/.vim
+ls: cannot access /root/.vim: No such file or directory <== we need create it!!!
+// $ mkdir -p ~/.vim/colors
+// copy your color.vim to your colors directory
+// $ cp /path/to/your/color.vim  ~/.vim/colors
+// restart vim to use new colorscheme
+// :colorscheme color
+// (optional) put command above to ~/.vimrc file to make it permanent
